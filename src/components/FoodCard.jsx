@@ -1,9 +1,10 @@
 
-export default function FoodCard() {
+export default function FoodCard(props) {
+    const {foodName} = props
     return(
         <div>
-            <h3>Food name</h3>
-            <p>description of the food</p>
+            <h3>{foodName}</h3>
+            <p>{props.foodName}</p>
         </div>
     )
 }

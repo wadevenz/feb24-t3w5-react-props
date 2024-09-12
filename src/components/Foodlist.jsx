@@ -12,12 +12,11 @@ let foods = [
 
 
 
-
 export default function FoodList() {
     return (
         <section>
-            {foods.map(food => {
-                return <FoodCard />
+            {foods.map((food, index) => {
+                return <FoodCard key={"food: " + index} foodName={food}/>
             })}
         </section>
     )
